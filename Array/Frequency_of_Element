@@ -1,0 +1,17 @@
+# Frequency of Each Element
+arr = [1, 2, 2, 3, 4, 4, 4, 5]
+
+freq = {}
+for num in arr:
+  if num in freq:
+    freq[num] += 1
+  else:
+    freq[num] = 1
+
+print(freq)
+
+
+#another way
+for num in arr:
+  freq[num] = freq.get(num,0)+1
+print(freq)
