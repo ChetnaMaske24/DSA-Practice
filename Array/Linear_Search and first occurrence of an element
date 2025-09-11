@@ -1,0 +1,28 @@
+# Linear Search (Search for an Element)
+arr = [10, 20, 30, 40, 50]
+x = 30 
+found = False
+for i in range(len(arr)):
+  if arr[i] == x:
+    print("Element present at the index ",i)
+    found = True
+    break
+
+if not found:
+  print("-1")
+
+
+# Find the index of the first occurrence of an element
+arr = [5, 10, 15, 10, 20]
+x = 10
+index = -1
+
+for i in range(len(arr)):
+    if arr[i] == x:
+        index = i
+        break
+
+if index != -1:
+    print("First occurrence at index", index)
+else:
+    print("Element not found")
