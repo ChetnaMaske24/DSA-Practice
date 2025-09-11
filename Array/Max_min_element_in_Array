@@ -1,0 +1,15 @@
+arr = [1, 2, 3, 2, 4, 5, 1]
+
+# maximum
+max_arr = arr[0]
+for i in range(len(arr)):
+  if arr[i] > max_arr:
+    max_arr = arr[i]
+print("Maximum = ",max_arr)
+
+#minimum
+min_arr = arr[0]
+for i in range(len(arr)):
+  if arr[i] < min_arr:
+    min_arr = arr[i]
+print("Minimun = " ,min_arr)
