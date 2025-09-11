@@ -1,0 +1,28 @@
+#Find the second largest and second smallest element.
+arr = [10, 20, 4, 45, 99]
+
+# second largest
+largest = float('-inf')
+second_largest =  float('-inf')
+
+for num in arr:
+  if num > largest:
+    second_largest = largest
+    largest = num
+  elif num > second_largest and num != largest:
+    second_largest = num
+    
+print("Second_largest element =",second_largest)
+
+
+#second smallest element
+smallest = float('inf')
+second_smallest =  float('inf')
+
+for num in arr:
+  if num < smallest:
+    second_smallest = smallest
+    smallest = num
+  elif num < second_smallest and num != smallest:
+    second_smallest =num
+print("Second_smallest element =",second_smallest)
