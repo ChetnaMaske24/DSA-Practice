@@ -1,0 +1,5 @@
+# Find the missing number in an array of 1 to n
+arr = [1, 2, 4, 5, 6]
+n = 6
+missing_number = n*(n+1)//2 - sum(arr)
+print(missing_number)
