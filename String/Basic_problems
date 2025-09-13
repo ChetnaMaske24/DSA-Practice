@@ -1,0 +1,77 @@
+# 1. Print first and last character of a string
+def first_and_last(s: str):
+  if len(s)==0:
+    return None,None
+  return s[0], s[-1]
+
+
+# 2. Count vowels and consonants in a string
+def count_vowels_consonants(s: str):
+  vowels = "aeiouAEIOU"
+  v_count = 0
+  c_count = 0
+  for ch in s:
+    if ch.isalpha():
+      if ch in vowels:
+        v_count +=1
+      else:
+        c_count +=1
+  return v_count,c_count
+
+
+# 3. Reverse a string without using slicing
+def reverse_string(s: str):
+  rev = ""
+  for ch in s:
+    rev = ch + rev
+  return rev
+
+
+# 4. Check if a string is palindrome   
+def is_palindrome(s: str) -> bool:
+  left= 0 
+  right =len(s)-1
+  while left < right:
+    if s[left]!=s[right]:
+      return False
+      left +=1
+      right -=1
+  return True
+
+
+# 5. Find frequency of each character
+def char_frequency(s: str):
+  freq = {}
+  for ch in s:
+    freq[ch] = freq.get(ch,0)+1
+  return freq
+
+
+# 6. Remove duplicate characters
+def remove_duplicates(s: str):
+  result = ""
+  for ch in s:
+    if ch not in result:
+      result += ch
+  return result
+    
+
+
+# 7. Find length of string without using len()
+def string_length(s: str) -> int:
+  count = 0
+  for _ in s:
+    count+=1
+  return count
+  
+
+if __name__ == "__main__":
+    test_str = "datastructure"
+
+    print("1) First and Last:", first_and_last(test_str))
+    print("2) Vowels and Consonants:", count_vowels_consonants(test_str))
+    print("3) Reverse:", reverse_string(test_str))
+    print("4) Palindrome Check:", is_palindrome(test_str))
+    print("5) Frequency:", char_frequency(test_str))
+    print("6) Remove Duplicates:", remove_duplicates(test_str))
+    print("7) Length (manual):", string_length(test_str))
