@@ -59,7 +59,8 @@ It’s one of the most fundamental operations in **computer science** and is a b
 
 ## 📌 How to Run
 # Clone the repository
-git clone https://github.com/ChetnaMaske24/Sorting.git
+git clone https://github.com/ChetnaMaske24/DSA-Practice/tree/main/Sorting
+
 cd Sorting
 
 # Run any Python file
