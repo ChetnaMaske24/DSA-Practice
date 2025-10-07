@@ -71,11 +71,13 @@ python bubble_sort.py
 ## 🧩 Summary
 
 Simple sorts: Bubble, Selection, Insertion
+
 Divide & Conquer: Merge, Quick
+
 Use based on:
-Data size
-Data type
-Memory & stability requirements
+-Data size
+-Data type
+-Memory & stability requirements
 
 ----
 
